@@ -1,12 +1,66 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThinkTutor AI</title>
-    </head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <body>
-        <div id="chat-box"></div>
-        <input type="text" placeholder="Enter question">
-        <button>Send</button>
-        
-    </body>
+    <div class="app">
+
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">T</div>
+                <span class="logo-text">ThinkTutor<span class="logo-ai">AI</span></span>
+            </div>
+
+            <div class="level-card">
+                <p class="level-label">Current Level</p>
+                <div class="level-display">
+                    <span class="level-dot" id="level-dot"></span>
+                    <span class="level-text" id="level-text">Waiting...</span>
+                </div>
+                <div class="level-bar">
+                    <div class="level-bar-fill" id="level-bar-fill"></div>
+                </div>
+            </div>
+
+            <div class="sidebar-info">
+                <p>Enter any topic to begin learning. The AI adapts its explanations based on your answers.</p>
+            </div>
+
+            <div class="how-it-works">
+                <p class="how-title">How it works</p>
+                <div class="step"><span class="step-num">1</span><span>Ask about any topic</span></div>
+                <div class="step"><span class="step-num">2</span><span>AI explains + asks a question</span></div>
+                <div class="step"><span class="step-num">3</span><span>Answer to adapt the depth</span></div>
+            </div>
+        </aside>
+
+        <main class="chat-area">
+            <div class="chat-header">
+                <h1>What do you want to learn today?</h1>
+                <p>Your AI tutor adapts to how <em>you</em> think</p>
+            </div>
+
+            <div class="chat-box" id="chat-box">
+                <div class="welcome-message">
+                    <div class="welcome-icon">🧠</div>
+                    <p>Start by typing a topic — like <strong>"Python loops"</strong>, <strong>"photosynthesis"</strong>, or <strong>"how the internet works"</strong>.</p>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Ask about any topic or answer the question..." autocomplete="off"/>
+                <button id="send-btn" onclick="sendMessage()">Send</button>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
 </html>
