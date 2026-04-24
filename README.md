@@ -3,6 +3,8 @@
 An adaptive AI tutor that personalizes explanations in real time based on how you respond and not just what you ask.
 
 ---
+Live link: https://thinktutor-ai.onrender.com
+---
 
 ## What is ThinkTutor AI?
 
@@ -68,7 +70,9 @@ GROQ_API_KEY=your_groq_api_key_here
 > Get your free Groq API key at [console.groq.com](https://console.groq.com) — no billing required.
 
 ### 5. Run the app
-Live link: https://thinktutor-ai.onrender.com
+```bash
+python app.py
+```
 
 ---
 
