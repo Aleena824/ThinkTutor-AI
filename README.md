@@ -68,9 +68,7 @@ GROQ_API_KEY=your_groq_api_key_here
 > Get your free Groq API key at [console.groq.com](https://console.groq.com) — no billing required.
 
 ### 5. Run the app
-```bash
-python app.py
-```
+Live link: https://thinktutor-ai.onrender.com
 
 ---
 
